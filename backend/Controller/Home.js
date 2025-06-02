@@ -1,21 +1,21 @@
 const Home = require("../Model/Home");
 
-const home = async (req, res) => {
+const createHome = async (req, res) => {
   try {
-    const { description } = req.body;
+    const { description,name,role } = req.body;
 
-    if (!description) {
+    if (!description || !name ||! role) {
       return res.status(400).json({ message: "Descriptiopn are required" });
     }
 
-    const newHome = new Home({ description });
+    const newHome = new Home({ description, name, role });
     await newHome.save();
 
     res.status(201).json({ message: "Home contect created ", home: newHome });
   } catch (error) {
-    console.error("creating homw content", error.message);
+    console.error("creating home content", error.message);
     res.status(500).json({ message: "internal server error" });
   }
 };
 
-module.exports = home;
+module.exports = createHome;
