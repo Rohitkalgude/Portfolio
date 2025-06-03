@@ -1,13 +1,13 @@
-const mongoose = require("../Model/Project");
+const mongoose = require("mongoose");
 
-const Project = new mongoose.schema({
+const ProjectSchema = new mongoose.Schema({
   title: {
     type: String,
   },
   description: {
     type: String,
   },
-  githubUrl: {
+  link: {
     type: String,
   },
   live: {
@@ -15,4 +15,4 @@ const Project = new mongoose.schema({
   },
 });
 
-module.exports = mongoose.module("project", Project);
+module.exports = mongoose.model("Project", ProjectSchema);
