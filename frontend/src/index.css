@@ -5,4 +5,17 @@ body {
   overflow-x: hidden;
   overflow-y: auto;
 }
- 
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

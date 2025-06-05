@@ -39,55 +39,55 @@ function Navbar() {
 function NavLinks({ onClick }) {
   return (
     <>
-        <Link
-          to="home"
-          smooth={true}
-          duration={500}
-          onClick={onClick}
-          className="transition duration-300 hover:text-blue-400 hover:scale-105 cursor-pointer"
-        >
-          Home
-        </Link>
+      <Link
+        to="home"
+        smooth={true}
+        duration={500}
+        onClick={onClick}
+        className="transition duration-300 hover:text-blue-400 hover:scale-105 cursor-pointer"
+      >
+        Home
+      </Link>
 
-        <Link
-          to="about"
-          smooth={true}
-          duration={500}
-          onClick={onClick}
-          className="transition duration-300 hover:text-blue-400 hover:scale-105 cursor-pointer"
-        >
-          About
-        </Link>
+      <Link
+        to="about"
+        smooth={true}
+        duration={500}
+        onClick={onClick}
+        className="transition duration-300 hover:text-blue-400 hover:scale-105 cursor-pointer"
+      >
+        About
+      </Link>
 
-        <Link
-          to="techstack"
-          smooth={true}
-          duration={500}
-          onClick={onClick}
-          className="transition duration-300 hover:text-blue-400 hover:scale-105 cursor-pointer"
-        >
-          Tech Stack
-        </Link>
+      <Link
+        to="techstack"
+        smooth={true}
+        duration={500}
+        onClick={onClick}
+        className="transition duration-300 hover:text-blue-400 hover:scale-105 cursor-pointer"
+      >
+        Tech Stack
+      </Link>
 
-        <Link
-          to="project"
-          smooth={true}
-          duration={500}
-          onClick={onClick}
-          className="transition duration-300 hover:text-blue-400 hover:scale-105 cursor-pointer"
-        >
-          Projects
-        </Link>
+      <Link
+        to="projects"
+        smooth={true}
+        duration={500}
+        onClick={onClick}
+        className="transition duration-300 hover:text-blue-400 hover:scale-105 cursor-pointer"
+      >
+        Projects
+      </Link>
 
-        <Link
-          to="contact"
-          smooth={true}
-          duration={500}
-          onClick={onClick}
-          className="transition duration-300 hover:text-blue-400 hover:scale-105 cursor-pointer"
-        >
-          Contact
-        </Link>
+      <Link
+        to="contact"
+        smooth={true}
+        duration={500}
+        onClick={onClick}
+        className="transition duration-300 hover:text-blue-400 hover:scale-105 cursor-pointer"
+      >
+        Contact
+      </Link>
     </>
   );
 }

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import heroImage from "../assets/1.png";
 
 function Hero() {
@@ -16,17 +17,19 @@ function Hero() {
           </h1>
           <p className="text-3xl sm:text-4xl">I develop things for web!</p>
 
-          <button className="mt-6 px-8 py-3 border border-blue-400 text-blue-400 rounded-full hover:bg-blue-400 hover:text-white transition font-semibold text-lg sm:text-xl">
-            CONTACT ME
-          </button>
+          <a href="#contact">
+            <button className="mt-6 px-8 py-3 border border-blue-400 text-blue-400 rounded-full hover:bg-blue-400 hover:text-white transition font-semibold text-lg sm:text-xl">
+              CONTACT ME
+            </button>
+          </a>
         </div>
 
         {/* Image Section */}
-        <div className="mb-10 lg:mb-0">
+        <div className="hidden md:block mb-10 lg:mb-0">
           <img
             src={heroImage}
             alt="hero"
-            className="w-64 sm:w-80 md:w-96 lg:w-[420px] xl:w-[480px]"
+            className="w-64 sm:w-80 md:w-96 lg:w-[420px] xl:w-[500px]"
           />
         </div>
       </div>
