@@ -5,7 +5,7 @@ function SocialLinks() {
   return (
     <div className="relative w-full">
       {/* Fixed Social Icons (Desktop Only) */}
-      <div className="fixed left-0 top-1/2 transform -translate-y-1/2 z-50 hidden lg:flex flex-col items-center gap-6 bg-neutral-800 py-14 px-6 rounded-lg -ml-1">
+      <div className="fixed left-0 top-1/2 transform -translate-y-1/2 z-50 hidden lg:flex flex-col items-center gap-6 bg-[#65656B1B] py-14 px-6 rounded-lg -ml-1">
         <a
           href="https://www.linkedin.com/in/rohit-kalgude-58aa41263"
           target="_blank"
@@ -15,7 +15,7 @@ function SocialLinks() {
           <FaLinkedin />
         </a>
         <a
-          href="https://github.com/rohitkalgude007"
+          href="https://github.com/Rohitkalgude/Rohit-Kalgude.git"
           target="_blank"
           rel="noopener noreferrer"
           className="text-gray-300 hover:text-blue-400 transition text-2xl"

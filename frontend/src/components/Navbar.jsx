@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
 import { FiMenu, FiX } from "react-icons/fi";
+import logo1 from "../assets/logo1.png";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -15,8 +16,10 @@ function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 px-6 sm:px-10 py-4 sm:py-6 backdrop-blur-sm bg-transparent text-gray-300 text-lg sm:text-xl">
-      <div className="flex justify-between items-center">
-        <div className="text-2xl font-bold">MyPortfolio</div>
+      <div className="flex justify-between items-center max-w-7xl mx-auto">
+        <div className="flex items-center">
+          <img src={logo1} alt="Logo" className="w-20 h-auto" />
+        </div>
 
         <div className="sm:hidden text-3xl cursor-pointer" onClick={toggleopen}>
           {open ? <FiX /> : <FiMenu />}

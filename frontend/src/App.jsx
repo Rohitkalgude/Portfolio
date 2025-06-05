@@ -8,6 +8,7 @@ import Socials from "./components/Socials";
 import Techstack from "./components/TechStack";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Projects/>
       <Contact/>
       <Socials/>
+      <Footer/>
       <ToastContainer position="top-right" autoClose={3000} />
     </div>
   );
