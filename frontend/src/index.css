@@ -4,6 +4,7 @@ body {
   margin: 0;
   overflow-x: hidden;
   overflow-y: auto;
+  font-family: sans-serif;
 }
 
 ::-webkit-scrollbar {
@@ -15,3 +16,5 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+

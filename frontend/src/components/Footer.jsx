@@ -2,7 +2,7 @@ import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className="bg-zinc-900 text-white py-6 px-4 mt-10 border-t border-zinc-700">
+    <footer className="bg-zinc-900 text-white py-6 px-4 mt-10 border-t border-zinc-700 hidden md:block">
       <div className="flex flex-col md:flex-row justify-between items-center gap-4">
         <p className="text-sm text-center md:text-left">
           © 2025 Rohit Kalgude. All rights reserved.
