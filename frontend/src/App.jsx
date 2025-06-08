@@ -4,11 +4,9 @@ import "react-toastify/dist/ReactToastify.css";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
-// import Socials from "./components/Socials";
-import Techstack from "./components/TechStack";
-import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Main from "./components/Main";
 
 function App() {
   return (
@@ -16,10 +14,8 @@ function App() {
       <Navbar />
       <Home />
       <About />
-      <Techstack/>
-      <Projects/>
+      <Main/>
       <Contact/>
-      {/* <Socials/> */}
       <Footer/>
       <ToastContainer position="top-right" autoClose={3000} />
     </div>

@@ -44,7 +44,6 @@ function Projects() {
   return (
     <section id="projects" className="bg-zinc-900 text-white px-6 py-20">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-12">Projects</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {projectList.map((proj) => (
             <div

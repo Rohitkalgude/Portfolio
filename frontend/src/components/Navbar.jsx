@@ -23,8 +23,8 @@ function Navbar() {
     <nav className="fixed top-0 left-0 w-full z-50 px-6 sm:px-10 py-4 sm:py-6 backdrop-blur-sm bg-transparent text-gray-300 text-lg sm:text-xl">
       <div className="flex justify-between items-center max-w-7xl mx-auto">
         {/* Logo on left */}
-        <div className="flex-shrink-0 -ml-48">
-          <h1 className="text-xl font-bold bg-gradient-to-r from-[#a855f7] to-[#6366f1] bg-clip-text text-transparent">
+        <div className="flex-shrink-0 -ml-30">
+          <h1 className="text-2xl font-bold bg-gradient-to-r from-[#a855f7] to-[#6366f1] bg-clip-text text-transparent drop-shadow-lg">
             Rohit Kalgude
           </h1>
         </div>
@@ -35,7 +35,7 @@ function Navbar() {
         </div>
 
         {/* Desktop nav links aligned right */}
-        <div className="text-lg hidden sm:flex space-x-8 -mr-52">
+        <div className="text-sm hidden sm:flex space-x-8 -mr-28">
           <NavLinks activeLink={activeLink} onClick={handleLinkClick} />
         </div>
       </div>
@@ -99,42 +99,21 @@ function NavLinks({ activeLink, onClick }) {
 
         <div className="relative group">
           <Link
-            to="techstack"
+            to="main"
             smooth={true}
             duration={500}
-            onClick={() => onClick("techstack")}
+            onClick={() => onClick("main")}
             className={`z-10 transition-colors duration-300 font-semibold cursor-pointer ${
-              activeLink === "techstack"
+              activeLink === "main"
                 ? "bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent"
                 : "text-white"
             }`}
           >
-            Tech Stack
+            Portfolio
           </Link>
           <span
             className={`absolute left-0 -bottom-1 w-full h-0.5 bg-gradient-to-r from-[#6366f1] to-[#a855f7] transform origin-left transition-transform duration-300 ${
-              activeLink === "techstack" ? "scale-x-100" : "scale-x-0"
-            }`}
-          ></span>
-        </div>
-
-        <div className="relative group">
-          <Link
-            to="projects"
-            smooth={true}
-            duration={500}
-            onClick={() => onClick("projects")}
-            className={`z-10 transition-colors duration-300 font-semibold cursor-pointer ${
-              activeLink === "projects"
-                ? "bg-gradient-to-r from-[#6366f1] to-[#a855f7] bg-clip-text text-transparent"
-                : "text-white"
-            }`}
-          >
-            Projects
-          </Link>
-          <span
-            className={`absolute left-0 -bottom-1 w-full h-0.5 bg-gradient-to-r from-[#6366f1] to-[#a855f7] transform origin-left transition-transform duration-300 ${
-              activeLink === "projects" ? "scale-x-100" : "scale-x-0"
+              activeLink === "main" ? "scale-x-100" : "scale-x-0"
             }`}
           ></span>
         </div>
