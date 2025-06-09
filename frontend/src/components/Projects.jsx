@@ -11,6 +11,7 @@ function Projects() {
       title: "Payroll Management",
       description: "A system to manage employee attendance, salary, and leave.",
       link: "https://github.com/Rohitkalgude/PayrollMenament",
+      technology: "React, MongoDB, Express, Node.js",
       live: "",
     },
     {
@@ -20,6 +21,7 @@ function Projects() {
       description:
         "A simple task manager built with Redux for state management.",
       link: "https://github.com/Rohitkalgude/Redux-Todo",
+      technology: "React.js, Tailwind CSS, Redux Toolkit",
       live: "",
     },
     {
@@ -29,6 +31,7 @@ function Projects() {
       description:
         "An e-commerce frontend clone of Myntra using React and Tailwind.",
       link: "https://github.com/Rohitkalgude/Myntra",
+      technology: "HTML, CSS",
       live: "",
     },
     {
@@ -37,26 +40,36 @@ function Projects() {
       title: "Meme Generator",
       description: "Create and share custom memes using this React-based app.",
       link: "https://github.com/Rohitkalgude/Meme-Generator",
+      technology: "React, Tailwind CSS",
       live: "",
     },
   ];
 
   return (
-    <section id="projects" className="bg-zinc-900 text-white px-6 py-20">
-      <div className="max-w-6xl mx-auto">
+    <section
+      id="projects"
+      className="text-white px-6 py-20 -ml-28 md:w-[87rem]"
+    >
+      <div className="max-w-9xl mx-auto -mt-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {projectList.map((proj) => (
             <div
               key={proj.id}
-              className="border border-gray-700 rounded-lg p-6 hover:shadow-xl transition duration-300"
+              className="border border-white/10 rounded-2xl p-6 bg-[#1a1a2b] transition-all duration-300 hover:shadow-[0_0_30px_5px_rgba(168,85,247,0.3)] hover:scale-105"
             >
               <img
                 src={proj.image}
                 alt={proj.title}
-                className="w-full h-48 object-cover"
+                className="w-full h-48 object-cover rounded-lg mb-4"
               />
-              <h3 className="text-2xl font-semibold mb-2">{proj.title}</h3>
+              <h3 className="text-xl font-bold mb-2">{proj.title}</h3>
               <p className="text-gray-300 mb-4">{proj.description}</p>
+              <div className="mb-4">
+                <span className="text-sm font-semibold text-purple-400 uppercase">
+                  Tech Stack:
+                </span>
+                <p className="text-gray-400 text-sm mt-1">{proj.technology}</p>
+              </div>
               <div className="flex gap-4">
                 <a
                   href={proj.link}

@@ -29,14 +29,14 @@ function Main() {
           </p>
         </div>
 
-        <div className="flex flex-wrap justify-between gap-6 mb-10 px-12 py-6 rounded-xl border border-white/10 w-full max-w-7xl -mx-24">
+        <div className="flex flex-wrap justify-between -ml-28 px-12 py-4 rounded-xl border border-white/10 md:w-[87rem]">
           {sections.map((section) => (
             <button
               key={section.key}
               onClick={() => setActive(section.key)}
-              className={`w-full sm:w-[300px] flex items-center justify-center gap-3 px-7 py-5 text-lg sm:text-xl rounded-2xl border font-semibold transition-all duration-300 ${
+              className={`w-full sm:w-[350px] flex items-center justify-center gap-3 px-7 py-5 text-lg sm:text-xl rounded-2xl border font-semibold transition-all duration-300 ${
                 active === section.key
-                  ? "bg-gradient-to-br from-purple-500 to-purple-700 text-white shadow-[0_0_20px_#a855f7]"
+                  ? "bg-gradient-to-br from-purple-500 to-purple-700 text-white"
                   : "bg-transparent border-transparent hover:bg-white/5"
               }`}
             >

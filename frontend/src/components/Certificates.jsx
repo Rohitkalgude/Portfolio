@@ -1,3 +1,4 @@
+import { useState } from "react";
 import image1 from "../assets/HackerRank_page.jpg";
 import image2 from "../assets/MEME_page.jpg";
 import image3 from "../assets/Talwindcss_page.jpg";
@@ -13,9 +14,11 @@ const certificates = [
 ];
 
 function Certificates() {
+  const [clickimage, setSelectedImage] = useState(null);
+
   return (
-    <section className="bg-zinc-900 text-white px-10 py-30">
-      <div className="max-w-6xl mx-auto">
+    <section className="bg-zinc-900 text-white px-6 py-20 -ml-28 md:w-[87rem]">
+      <div className="max-w-9xl mx-auto -mt-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {certificates.map((cert) => (
             <div
@@ -25,8 +28,10 @@ function Certificates() {
               <img
                 src={cert.image}
                 alt={cert.title}
-                className="w-full h-48 object-cover rounded-md mb-4"
+                className="w-full h-80 object-cover rounded-md cursor-pointer hover:scale-105 transition-transform duration-300"
+                onClick={() => setSelectedImage(cert.image)}
               />
+
               <h3 className="text-lg font-semibold text-center">
                 {cert.title}
               </h3>
@@ -34,6 +39,28 @@ function Certificates() {
           ))}
         </div>
       </div>
+
+      {clickimage && (
+        <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
+          <div className="relative max-w-[60vw] max-h-[80vh]">
+            <button
+              onClick={() => setSelectedImage(null)}
+              className="absolute top-2 right-2 bg-zinc-700 hover:bg-red-700 text-white w-10 h-10 flex items-center justify-center rounded-full shadow-lg z-50"
+              aria-label="Close Image"
+            >
+              <span className="text-2xl font-bold leading-none select-none">
+                &times;
+              </span>
+            </button>
+
+            <img
+              src={clickimage}
+              alt="certification"
+              className="w-full h-auto max-h-[80vh] rounded-lg shadow-xl object-contain"
+            />
+          </div>
+        </div>
+      )}
     </section>
   );
 }
