@@ -22,25 +22,21 @@ function Navbar() {
   return (
     <nav className="fixed top-0 left-0 w-full z-50 px-6 sm:px-10 py-4 sm:py-6 backdrop-blur-sm bg-transparent text-gray-300 text-lg sm:text-xl">
       <div className="flex justify-between items-center max-w-7xl mx-auto">
-        {/* Logo on left */}
         <div className="flex-shrink-0 -ml-30">
           <h1 className="text-2xl font-bold bg-gradient-to-r from-[#a855f7] to-[#6366f1] bg-clip-text text-transparent drop-shadow-lg">
             Rohit Kalgude
           </h1>
         </div>
 
-        {/* Mobile menu icon */}
         <div className="sm:hidden text-3xl cursor-pointer" onClick={toggleopen}>
           {open ? <FiX /> : <FiMenu />}
         </div>
 
-        {/* Desktop nav links aligned right */}
         <div className="text-sm hidden sm:flex space-x-8 -mr-28">
           <NavLinks activeLink={activeLink} onClick={handleLinkClick} />
         </div>
       </div>
 
-      {/* Mobile nav links */}
       {open && (
         <div className="flex flex-col items-center sm:hidden gap-6 mt-4">
           <NavLinks activeLink={activeLink} onClick={handleLinkClick} />

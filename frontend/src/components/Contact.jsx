@@ -51,7 +51,7 @@ function Contact() {
               <div>
                 <h4 className="text-white font-semibold text-base">LinkedIn</h4>
                 <a
-                  href="https://linkedin.com/in/rohitkalgude"
+                  href="https://www.linkedin.com/in/rohit-kalgude-58aa41263"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:underline text-white text-sm"
@@ -69,7 +69,7 @@ function Contact() {
               <div>
                 <h4 className="text-white font-semibold text-base">GitHub</h4>
                 <a
-                  href="https://github.com/rohitkalgude007"
+                  href="https://github.com/Rohitkalgude/Rohit-Kalgude.git"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:underline text-white text-sm"

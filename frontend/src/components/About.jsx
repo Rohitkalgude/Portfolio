@@ -16,7 +16,7 @@ function About() {
 
         {/* Description */}
         <p className="text-lg sm:text-2xl leading-relaxed text-gray-300 max-w-4xl mx-auto">
-          Hi, I'm{" "}
+          Hi, I'm
           <span className="text-white font-semibold">Rohit Kalgude</span>, a
           passionate frontend developer from Surat. I enjoy building clean,
           responsive, and accessible web applications. Over time, I’ve developed
@@ -24,7 +24,8 @@ function About() {
           <span className="text-white font-semibold">
             HTML, CSS, JavaScript,
           </span>{" "}
-          and <span className="text-white font-semibold">React.js</span>. I love
+          and
+          <span className="text-white font-semibold">React.js</span>. I love
           solving real-world problems through code and continuously expanding my
           knowledge in modern web technologies.
         </p>
@@ -66,7 +67,7 @@ function About() {
             <Card
               icon={PiCertificateBold}
               title="Certificates"
-              value="3"
+              value="5"
               description="Validated technical expertise"
             />
           </Link>
@@ -75,7 +76,7 @@ function About() {
             <Card
               icon={FaGlobe}
               title="Years of Experience"
-              value="2"
+              value="3"
               description="Building and growing daily"
             />
           </Link>

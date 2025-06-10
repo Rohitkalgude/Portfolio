@@ -12,7 +12,7 @@ function Hero() {
       className="h-screen w-full bg-zinc-90 text-white flex items-center justify-center px-6 md:-ml-28"
     >
       <div className="max-w-7xl w-full flex flex-col-reverse lg:flex-row items-center justify-between mt-20">
-        <div className="text-center lg:text-left space-y-5">
+        <div className="text-center lg:text-left space-y-5 flex-1">
           <h1 className="text-5xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-7xl font-bold tracking-tight">
             <span className="text-5xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-7xl font-bold tracking-tight">
               Full Stack
@@ -90,7 +90,7 @@ function Hero() {
               <FaLinkedin />
             </a>
             <a
-              href="https://github.com/rohitkalgude007"
+              href="https://github.com/Rohitkalgude/Rohit-Kalgude.git"
               target="_blank"
               rel="noopener noreferrer"
               className="rounded-xl bg-[#030014]  backdrop-blur-xl p-3 flex items-center justify-center border border-white/10 transition-transform duration-300 transform hover:scale-105
@@ -110,11 +110,11 @@ function Hero() {
           </div>
         </div>
 
-        <div className="hidden md:flex justify-end items-center mb-6 lg:mb-10 -mr-36">
+        <div className="hidden md:flex justify-end items-center mb-6 lg:mb-10 -mr-56">
           <img
             src={heroImage}
             alt="hero"
-            className="w-[350px] sm:w-[450px] md:w-[540px] lg:w-[600px] xl:w-[650px]"
+            className="w-[350px] sm:w-[450px] md:w-[540px] lg:w-[600px] xl:w-[620px]"
           />
         </div>
       </div>
