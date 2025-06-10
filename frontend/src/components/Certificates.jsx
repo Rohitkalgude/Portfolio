@@ -4,6 +4,7 @@ import image2 from "../assets/MEME_page.jpg";
 import image3 from "../assets/Talwindcss_page.jpg";
 import image4 from "../assets/develpment.jpg";
 import image5 from "../assets/java_page.jpg";
+import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 
 const certificates = [
   { id: 1, image: image1, title: "HackerRank Certificate" },
@@ -15,12 +16,15 @@ const certificates = [
 
 function Certificates() {
   const [clickimage, setSelectedImage] = useState(null);
+  const [showAll, setShowAll] = useState(false);
+
+  const visibleCertificates = showAll ? certificates : certificates.slice(0, 3);
 
   return (
     <section className="bg-zinc-900 text-white px-6 py-20 -ml-28 md:w-[87rem]">
       <div className="max-w-9xl mx-auto -mt-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
-          {certificates.map((cert) => (
+          {visibleCertificates.map((cert) => (
             <div
               key={cert.id}
               className="bg-[#1e1e2f] p-4 rounded-xl border border-white/10 shadow-md hover:shadow-purple-500/30 transition-all duration-300"
@@ -39,6 +43,25 @@ function Certificates() {
           ))}
         </div>
       </div>
+
+      {certificates.length > 3 && (
+        <div className="mt-6">
+          <button
+            onClick={() => setShowAll(!showAll)}
+            className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold rounded-lg border border-purple-500 text-purple-400 hover:bg-purple-600 hover:text-white transition"
+          >
+            {showAll ? (
+              <>
+                Less <FiChevronUp size={18} />
+              </>
+            ) : (
+              <>
+                Show All <FiChevronDown size={18} />
+              </>
+            )}
+          </button>
+        </div>
+      )}
 
       {clickimage && (
         <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">

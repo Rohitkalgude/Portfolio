@@ -2,8 +2,12 @@ import image1 from "../assets/PayRoll.png";
 import image2 from "../assets/Redux-Todo.png";
 import image3 from "../assets/Myntra.png";
 import image4 from "../assets/MEME.png";
+import { useState } from "react";
+import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 
 function Projects() {
+  const [showAll, setShowAll] = useState(false);
+
   const projectList = [
     {
       id: 1,
@@ -45,6 +49,8 @@ function Projects() {
     },
   ];
 
+  const visibleproject = showAll ? projectList : projectList.slice(0, 3);
+
   return (
     <section
       id="projects"
@@ -52,10 +58,10 @@ function Projects() {
     >
       <div className="max-w-9xl mx-auto -mt-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projectList.map((proj) => (
+          {visibleproject.map((proj) => (
             <div
               key={proj.id}
-              className="border border-white/10 rounded-2xl p-6 bg-[#1a1a2b] transition-all duration-300 hover:shadow-[0_0_30px_5px_rgba(168,85,247,0.3)] hover:scale-105"
+              className="border border-white/10 rounded-2xl p-6 bg-[#1a1a2b] transition-all duration-300 hover:shadow-[0_0_30px_5px_rgba(168,85,247,0.3)]"
             >
               <img
                 src={proj.image}
@@ -93,6 +99,25 @@ function Projects() {
             </div>
           ))}
         </div>
+
+        {projectList.length > 3 && (
+          <div className="mt-6">
+            <button
+              onClick={() => setShowAll(!showAll)}
+              className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold rounded-lg border border-purple-500 text-purple-400 hover:bg-purple-600 hover:text-white transition"
+            >
+              {showAll ? (
+                <>
+                  Less <FiChevronUp size={18} />
+                </>
+              ) : (
+                <>
+                  Show All Projects <FiChevronDown size={18} />
+                </>
+              )}
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );
