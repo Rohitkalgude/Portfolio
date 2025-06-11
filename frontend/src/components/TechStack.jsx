@@ -31,7 +31,7 @@ function TechStack() {
   return (
     <section
       id="techstack"
-      className="bg-zinc-900 text-white px-6 py-20 -ml-28 md:w-[87rem]"
+      className="text-white px-6 py-20 -ml-28 md:w-[87rem]"
     >
       <div className="max-w-9xl mx-auto">
         <motion.div

@@ -8,7 +8,7 @@ function About() {
   return (
     <section
       id="about"
-      className="min-h-screen px-6 py-20 bg-zinc-900 text-white flex items-center justify-center"
+      className="min-h-screen px-6 py-2 text-white flex items-center justify-center"
     >
       <div className="max-w-6xl w-full text-center">
         {/* Heading */}
@@ -35,7 +35,7 @@ function About() {
           <a
             href="/Resume.pdf"
             download
-            className="flex items-center gap-2 px-6 py-3 bg-purple-600 hover:bg-purple-700 rounded-lg transition text-white font-medium"
+            className="flex items-center gap-2 px-6 py-3 bg-purple-600 hover:bg-purple-700 rounded-lg transition text-white font-medium w-full sm:w-auto justify-center"
           >
             <FaDownload />
             Download Resume
@@ -45,7 +45,7 @@ function About() {
             to="projects"
             smooth={true}
             duration={500}
-            className="cursor-pointer flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-lg border border-white/10 text-white hover:opacity-90 transition"
+            className="cursor-pointer flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-lg border border-white/10 text-white hover:opacity-90 transition w-full sm:w-auto justify-center"
           >
             <FaProjectDiagram />
             View Projects
@@ -53,7 +53,7 @@ function About() {
         </div>
 
         {/* Stats Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-96 -ml-28 mt-16 w-full max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-40 ml-0 md:-ml-28 mt-16">
           <Link to="projects" smooth={true} duration={500}>
             <Card
               icon={FiCode}

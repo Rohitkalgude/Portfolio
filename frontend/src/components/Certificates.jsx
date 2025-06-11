@@ -21,7 +21,7 @@ function Certificates() {
   const visibleCertificates = showAll ? certificates : certificates.slice(0, 3);
 
   return (
-    <section className="bg-zinc-900 text-white px-6 py-20 -ml-28 md:w-[87rem]">
+    <section className="text-white px-6 py-20 -ml-28 md:w-[87rem]">
       <div className="max-w-9xl mx-auto -mt-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {visibleCertificates.map((cert) => (

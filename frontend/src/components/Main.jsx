@@ -29,7 +29,7 @@ function Main() {
           </p>
         </div>
 
-        <div className="flex flex-wrap justify-between -ml-28 px-12 py-4 rounded-xl border border-white/10 md:w-[87rem]">
+        <div className="flex flex-wrap justify-between ml-0 md:-ml-28 px-12 py-4 rounded-xl border border-white/10 w-full md:w-[87rem]">
           {sections.map((section) => (
             <button
               key={section.key}
