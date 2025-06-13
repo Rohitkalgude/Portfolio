@@ -21,22 +21,22 @@ function Certificates() {
   const visibleCertificates = showAll ? certificates : certificates.slice(0, 3);
 
   return (
-    <section className="text-white px-6 py-20 -ml-28 md:w-[87rem]">
-      <div className="max-w-9xl mx-auto -mt-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+    <section className="text-white px-4 sm:px-6 py-16 sm:py-20 -ml-0 sm:-ml-28 sm:w-[87rem]">
+      <div className="max-w-9xl mx-auto -mt-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
           {visibleCertificates.map((cert) => (
             <div
               key={cert.id}
-              className="bg-[#1e1e2f] p-4 rounded-xl border border-white/10 shadow-md hover:shadow-purple-500/30 transition-all duration-300"
+              className="bg-[#1e1e2f] p-3 sm:p-4 rounded-xl border border-white/10 shadow-md hover:shadow-purple-500/30 transition-all duration-300"
             >
               <img
                 src={cert.image}
                 alt={cert.title}
-                className="w-full h-80 object-cover rounded-md cursor-pointer hover:scale-105 transition-transform duration-300"
+                className="w-full h-64 sm:h-80 object-cover rounded-md cursor-pointer hover:scale-105 transition-transform duration-300"
                 onClick={() => setSelectedImage(cert.image)}
               />
 
-              <h3 className="text-lg font-semibold text-center">
+              <h3 className="text-base sm:text-lg font-semibold text-center mt-2">
                 {cert.title}
               </h3>
             </div>
@@ -45,10 +45,10 @@ function Certificates() {
       </div>
 
       {certificates.length > 3 && (
-        <div className="mt-6">
+        <div className="mt-6 text-center sm:text-left">
           <button
             onClick={() => setShowAll(!showAll)}
-            className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold rounded-lg border border-purple-500 text-purple-400 hover:bg-purple-600 hover:text-white transition"
+            className="inline-flex items-center gap-2 px-5 py-2 sm:px-6 sm:py-3 text-sm font-semibold rounded-lg border border-purple-500 text-purple-400 hover:bg-purple-600 hover:text-white transition"
           >
             {showAll ? (
               <>
@@ -65,7 +65,7 @@ function Certificates() {
 
       {clickimage && (
         <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50">
-          <div className="relative max-w-[60vw] max-h-[80vh]">
+          <div className="relative max-w-[90vw] sm:max-w-[60vw] max-h-[80vh]">
             <button
               onClick={() => setSelectedImage(null)}
               className="absolute top-2 right-2 bg-zinc-700 hover:bg-red-700 text-white w-10 h-10 flex items-center justify-center rounded-full shadow-lg z-50"

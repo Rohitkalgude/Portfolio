@@ -345,7 +345,7 @@ function Navbar() {
                 : "text-white"
             }`}
           >
-            Portfolio
+            Main
           </Link>
 
           <Link

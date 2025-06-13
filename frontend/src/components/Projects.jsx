@@ -54,29 +54,29 @@ function Projects() {
   return (
     <section
       id="projects"
-      className="text-white px-6 py-20 -ml-28 md:w-[87rem]"
+      className="text-white px-4 sm:px-6 py-16 sm:py-20 -ml-0 sm:-ml-28 sm:w-[87rem]"
     >
-      <div className="max-w-9xl mx-auto -mt-12">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="max-w-9xl mx-auto -mt-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {visibleproject.map((proj) => (
             <div
               key={proj.id}
-              className="border border-white/10 rounded-2xl p-6 bg-[#1a1a2b] transition-all duration-300 hover:shadow-[0_0_30px_5px_rgba(168,85,247,0.3)]"
+              className="border border-white/10 rounded-2xl p-4 sm:p-6 bg-[#1a1a2b] transition-all duration-300 hover:shadow-[0_0_30px_5px_rgba(168,85,247,0.3)]"
             >
               <img
                 src={proj.image}
                 alt={proj.title}
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />
-              <h3 className="text-xl font-bold mb-2">{proj.title}</h3>
-              <p className="text-gray-300 mb-4">{proj.description}</p>
+              <h3 className="text-lg sm:text-xl font-bold mb-2">{proj.title}</h3>
+              <p className="text-gray-300 text-sm sm:text-base mb-4">{proj.description}</p>
               <div className="mb-4">
                 <span className="text-sm font-semibold text-purple-400 uppercase">
                   Tech Stack:
                 </span>
                 <p className="text-gray-400 text-sm mt-1">{proj.technology}</p>
               </div>
-              <div className="flex gap-4">
+              <div className="flex gap-4 text-sm">
                 <a
                   href={proj.link}
                   target="_blank"
@@ -101,10 +101,10 @@ function Projects() {
         </div>
 
         {projectList.length > 3 && (
-          <div className="mt-6">
+          <div className="mt-6 text-center sm:text-left">
             <button
               onClick={() => setShowAll(!showAll)}
-              className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold rounded-lg border border-purple-500 text-purple-400 hover:bg-purple-600 hover:text-white transition"
+              className="inline-flex items-center gap-2 px-5 py-2 sm:px-6 sm:py-3 text-sm font-semibold rounded-lg border border-purple-500 text-purple-400 hover:bg-purple-600 hover:text-white transition"
             >
               {showAll ? (
                 <>

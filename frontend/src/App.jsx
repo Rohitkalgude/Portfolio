@@ -38,7 +38,7 @@ function App() {
   return (
     <div className="min-h-screen w-full bg-zinc-900 text-white overflow-x-hidden">
       <Navbar />
-      <main className="pt-20">
+      <main className="pt-10">
         <Home />
         <About />
         <Main />

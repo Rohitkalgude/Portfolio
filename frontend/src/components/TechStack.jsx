@@ -22,7 +22,7 @@ const tech = [
   { name: "Node.js", icon: FaNodeJs, color: "#3C873A" },
   { name: "Express.js", icon: SiExpress, color: "#ffffff" },
   { name: "MongoDB", icon: SiMongodb, color: "#4DB33D" },
-  { name: "Tailwind CSS", icon: SiTailwindcss, color: "#38BDF8" }, // 👈 Tailwind added here
+  { name: "Tailwind CSS", icon: SiTailwindcss, color: "#38BDF8" },
   { name: "Git", icon: FaGitAlt, color: "#F05032" },
   { name: "GitHub", icon: FaGithub, color: "#ffffff" },
 ];

@@ -56,7 +56,7 @@ function Contact() {
                   rel="noopener noreferrer"
                   className="hover:underline text-white text-sm"
                 >
-                  linkedin.com/in/rohitkalgude
+                  Rohit
                 </a>
               </div>
             </div>
@@ -74,7 +74,7 @@ function Contact() {
                   rel="noopener noreferrer"
                   className="hover:underline text-white text-sm"
                 >
-                  github.com/rohitkalgude007
+                  RohitKalgude
                 </a>
               </div>
             </div>
