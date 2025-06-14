@@ -31,18 +31,10 @@ function TechStack() {
   return (
     <section
       id="techstack"
-      className="text-white px-4 sm:px-6 py-12 sm:py-20 -ml-0 sm:-ml-28 sm:w-[87rem] mt-[-20px] sm:mt-0 lg:-mt-10"
+      className="text-white px-4 sm:px-6 py-12 sm:py-20"
     >
-      <div className="max-w-9xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="text-center"
-        ></motion.div>
-
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5 sm:gap-8">
+      <div className="max-w-screen-2xl mx-auto">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-5 sm:gap-8">
           {tech.map(({ name, icon: Icon, color }, index) => (
             <motion.div
               key={name}
@@ -64,9 +56,9 @@ function TechStack() {
                   ease: "linear",
                 }}
               >
-                <Icon size={40} sm:size={50} color={color} />
+                <Icon size={42} color={color} />
               </motion.div>
-              <p className="mt-3 sm:mt-4 text-xs sm:text-sm font-medium text-center">
+              <p className="mt-3 sm:mt-4 text-sm sm:text-base font-medium text-center">
                 {name}
               </p>
             </motion.div>

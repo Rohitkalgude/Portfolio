@@ -22,8 +22,7 @@ function Projects() {
       id: 2,
       image: image2,
       title: "Redux Todo App",
-      description:
-        "A simple task manager built with Redux for state management.",
+      description: "A simple task manager built with Redux for state management.",
       link: "https://github.com/Rohitkalgude/Redux-Todo",
       technology: "React.js, Tailwind CSS, Redux Toolkit",
       live: "",
@@ -32,8 +31,7 @@ function Projects() {
       id: 3,
       image: image3,
       title: "Myntra Clone",
-      description:
-        "An e-commerce frontend clone of Myntra using React and Tailwind.",
+      description: "An e-commerce frontend clone of Myntra using React and Tailwind.",
       link: "https://github.com/Rohitkalgude/Myntra",
       technology: "HTML, CSS",
       live: "",
@@ -52,12 +50,9 @@ function Projects() {
   const visibleproject = showAll ? projectList : projectList.slice(0, 3);
 
   return (
-    <section
-      id="projects"
-      className="text-white px-4 sm:px-6 py-16 sm:py-20 -ml-0 sm:-ml-28 sm:w-[87rem]"
-    >
-      <div className="max-w-9xl mx-auto -mt-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+    <section id="projects" className="text-white px-4 sm:px-6 py-16 sm:py-20 -mt-8">
+      <div className="w-full max-w-[87rem] mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {visibleproject.map((proj) => (
             <div
               key={proj.id}

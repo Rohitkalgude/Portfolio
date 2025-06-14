@@ -10,12 +10,10 @@ function About() {
       id="about"
       className="min-h-screen px-6 py-2 text-white flex items-center justify-center"
     >
-      <div className="max-w-6xl w-full text-center">
-        {/* Heading */}
-        <h2 className="text-4xl sm:text-5xl font-bold mb-8">About Me</h2>
-
+      <div className="max-w-6xl w-full text-left lg:text-center sm:text-left">
+        <h2 className="text-4xl sm:text-5xl font-bold mb-8 text-center sm:text-center">About Me</h2>
         {/* Description */}
-        <p className="text-lg sm:text-2xl leading-relaxed text-gray-300 max-w-4xl mx-auto">
+        <p className="text-lg sm:text-2xl leading-relaxed text-gray-300 max-w-4xl mx-auto text-left sm:text-left">
           Hi, I'm
           <span className="text-white font-semibold">Rohit Kalgude</span>, a
           passionate frontend developer from Surat. I enjoy building clean,
@@ -52,35 +50,34 @@ function About() {
           </Link>
         </div>
 
-        <div>
-          <div className="">
-            <Link to="projects" smooth={true} duration={500}>
-              <Card
-                icon={FiCode}
-                title="Total Projects"
-                value="4"
-                description="Innovative web & mobile solutions"
-              />
-            </Link>
+        {/* Stats Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-6 lg:gap-40 ml-0 lg:-ml-28 mt-16">
+          <Link to="main" smooth={true} duration={500}>
+            <Card
+              icon={FiCode}
+              title="Total Projects"
+              value="4"
+              description="Innovative web & mobile solutions"
+            />
+          </Link>
 
-            <Link to="projects" smooth={true} duration={500}>
-              <Card
-                icon={PiCertificateBold}
-                title="Certificates"
-                value="5"
-                description="Validated technical expertise"
-              />
-            </Link>
+          <Link to="main" smooth={true} duration={500}>
+            <Card
+              icon={PiCertificateBold}
+              title="Certificates"
+              value="5"
+              description="Validated technical expertise"
+            />
+          </Link>
 
-            <Link to="projects" smooth={true} duration={500}>
-              <Card
-                icon={FaGlobe}
-                title="Years of Experience"
-                value="3"
-                description="Building and growing daily"
-              />
-            </Link>
-          </div>
+          <Link to="main" smooth={true} duration={500}>
+            <Card
+              icon={FaGlobe}
+              title="Years of Experience"
+              value="3"
+              description="Building and growing daily"
+            />
+          </Link>
         </div>
       </div>
     </section>
