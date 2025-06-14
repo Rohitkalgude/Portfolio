@@ -52,34 +52,35 @@ function About() {
           </Link>
         </div>
 
-        {/* Stats Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-40 ml-0 md:-ml-28 mt-16">
-          <Link to="projects" smooth={true} duration={500}>
-            <Card
-              icon={FiCode}
-              title="Total Projects"
-              value="4"
-              description="Innovative web & mobile solutions"
-            />
-          </Link>
+        <div>
+          <div className="">
+            <Link to="projects" smooth={true} duration={500}>
+              <Card
+                icon={FiCode}
+                title="Total Projects"
+                value="4"
+                description="Innovative web & mobile solutions"
+              />
+            </Link>
 
-          <Link to="projects" smooth={true} duration={500}>
-            <Card
-              icon={PiCertificateBold}
-              title="Certificates"
-              value="5"
-              description="Validated technical expertise"
-            />
-          </Link>
+            <Link to="projects" smooth={true} duration={500}>
+              <Card
+                icon={PiCertificateBold}
+                title="Certificates"
+                value="5"
+                description="Validated technical expertise"
+              />
+            </Link>
 
-          <Link to="projects" smooth={true} duration={500}>
-            <Card
-              icon={FaGlobe}
-              title="Years of Experience"
-              value="3"
-              description="Building and growing daily"
-            />
-          </Link>
+            <Link to="projects" smooth={true} duration={500}>
+              <Card
+                icon={FaGlobe}
+                title="Years of Experience"
+                value="3"
+                description="Building and growing daily"
+              />
+            </Link>
+          </div>
         </div>
       </div>
     </section>

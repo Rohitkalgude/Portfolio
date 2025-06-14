@@ -1,18 +1,26 @@
 import { Link } from "react-scroll";
 import heroImage from "../assets/1.png";
-import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
-import { Typewriter } from "react-simple-typewriter";
-import { FaProjectDiagram } from "react-icons/fa";
+import {
+  FaLinkedin,
+  FaGithub,
+  FaTwitter,
+  FaProjectDiagram,
+} from "react-icons/fa";
 import { MdContactMail } from "react-icons/md";
+import { Typewriter } from "react-simple-typewriter";
 
 function Hero() {
   return (
     <div
       id="home"
-      className="min-h-screen w-full bg-zinc-900 text-white flex lg:ml-30 px-4 sm:px-6 lg:px-10"
+      className="min-h-screen w-full bg-zinc-900 text-white flex flex-col lg:flex-row px-4 sm:px-6 lg:px-10"
     >
-      <div className="max-w-7xl w-full flex flex-col-reverse lg:flex-row items-center justify-between gap-10 mt-19 lg:mt-8">
-        <div className="text-left md:text-left lg:text-left space-y-5 flex-1">
+      <div
+        className="max-w-7xl w-full flex flex-col-reverse md:flex-col-reverse lg:flex-row
+        nesthub:flex-row nesthubmax:flex-row tab:flex-row zenbook:flex-row 
+        items-center justify-between gap-10 lg:mt-8 mr-0 md:mr-60 "
+      >
+        <div className="text-left ml-5 lg:ml-28 space-y-5 flex-1">
           <h1 className="text-5xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-7xl font-bold tracking-tight">
             <span className="text-5xl sm:text-6xl md:text-6xl lg:text-6xl xl:text-7xl font-bold tracking-tight">
               Full Stack
@@ -22,6 +30,7 @@ function Hero() {
               Developer
             </span>
           </h1>
+
           <h1 style={{ fontFamily: "sans-serif", fontSize: "1.5rem" }}>
             <Typewriter
               words={["Computer Science & Engg. Student"]}
@@ -34,12 +43,12 @@ function Hero() {
             />
           </h1>
 
-          <p className="text-base md:text-lg text-gray-400 max-w-2xl leading-relaxed font-light aos-init aos-animate">
+          <p className="text-base md:text-lg text-gray-400 max-w-2xl leading-relaxed font-light">
             Enhancing digital experiences that are smooth, scalable, and made to
             impress.
           </p>
 
-          <div className="flex flex-wrap gap-3 justify-start aos-init aos-animate">
+          <div className="flex flex-wrap gap-3 justify-start">
             <div className="px-4 py-2 hidden sm:text-center rounded-full bg-white/5 backdrop-blur-sm border border-white/10 text-sm text-gray-300 hover:bg-white/10 transition-colors">
               React
             </div>
@@ -61,19 +70,18 @@ function Hero() {
                 to="projects"
                 smooth={true}
                 duration={500}
-                className="cursor-pointer transition-all duration-300"
+                className="cursor-pointer"
               >
                 Projects
               </Link>
             </div>
-
             <div className="relative w-40 h-11 bg-gradient-to-r from-[#6366f1] to-[#a855f7] backdrop-blur-xl rounded-lg border border-white/10 flex items-center justify-center gap-2 text-md text-gray-200 font-medium overflow-hidden transition-all duration-300 hover:bg-white/5">
               <MdContactMail className="text-lg" />
               <Link
                 to="contact"
                 smooth={true}
                 duration={500}
-                className="cursor-pointer transition-all duration-300"
+                className="cursor-pointer"
               >
                 Contact Me
               </Link>
@@ -85,8 +93,7 @@ function Hero() {
               href="https://www.linkedin.com/in/rohit-kalgude-58aa41263"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-xl bg-[#030014]  backdrop-blur-xl p-3 flex items-center justify-center border border-white/10 transition-transform duration-300 transform hover:scale-105
-                 hover:shadow-[0_0_30px_5px_rgba(168,85,247,0.3)] hover:border-white/20  text-white text-xl"
+              className="rounded-xl bg-[#030014] backdrop-blur-xl p-3 flex items-center justify-center border border-white/10 hover:scale-105 hover:shadow-[0_0_30px_5px_rgba(168,85,247,0.3)] hover:border-white/20 text-white text-xl transition-transform duration-300"
             >
               <FaLinkedin />
             </a>
@@ -94,8 +101,7 @@ function Hero() {
               href="https://github.com/Rohitkalgude/Rohit-Kalgude.git"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-xl bg-[#030014]  backdrop-blur-xl p-3 flex items-center justify-center border border-white/10 transition-transform duration-300 transform hover:scale-105
-                 hover:shadow-[0_0_30px_5px_rgba(168,85,247,0.3)] hover:border-white/20  text-white text-xl"
+              className="rounded-xl bg-[#030014] backdrop-blur-xl p-3 flex items-center justify-center border border-white/10 hover:scale-105 hover:shadow-[0_0_30px_5px_rgba(168,85,247,0.3)] hover:border-white/20 text-white text-xl transition-transform duration-300"
             >
               <FaGithub />
             </a>
@@ -103,18 +109,18 @@ function Hero() {
               href="https://x.com/kalgude_rohit?s=09"
               target="_blank"
               rel="noopener noreferrer"
-              className="rounded-xl bg-[#030014]  backdrop-blur-xl p-3 flex items-center justify-center border border-white/10 transition-transform duration-300 transform hover:scale-105
-                 hover:shadow-[0_0_30px_5px_rgba(168,85,247,0.3)] hover:border-white/20  text-white text-xl"
+              className="rounded-xl bg-[#030014] backdrop-blur-xl p-3 flex items-center justify-center border border-white/10 hover:scale-105 hover:shadow-[0_0_30px_5px_rgba(168,85,247,0.3)] hover:border-white/20 text-white text-xl transition-transform duration-300"
             >
               <FaTwitter />
             </a>
           </div>
         </div>
-        <div className="hidden md:block absolute right-4 sm:right-10 md:right-20 lg:right-32 xl:right-52 mb-6 lg:mb-10">
+
+        <div className="flex-1 flex justify-center lg:-mr-80 items-center mb-6 lg:mb-10">
           <img
             src={heroImage}
             alt="hero"
-            className="w-[300px] sm:w-[400px] md:w-[500px] lg:w-[580px] xl:w-[620px]"
+            className="w-[280px] sm:w-[350px] md:w-[450px] lg:w-[500px] xl:w-[600px]"
           />
         </div>
       </div>
@@ -123,7 +129,6 @@ function Hero() {
 }
 
 export default Hero;
-
 
 
 
