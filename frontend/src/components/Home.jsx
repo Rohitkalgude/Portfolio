@@ -17,7 +17,7 @@
 //     >
 //       <div
 //         className="max-w-7xl w-full flex flex-col-reverse md:flex-col-reverse lg:flex-row
-//         nesthub:flex-row nesthubmax:flex-row tab:flex-row zenbook:flex-row 
+//         nesthub:flex-row nesthubmax:flex-row tab:flex-row zenbook:flex-row
 //         items-center justify-between gap-10 lg:mt-8 mr-0 md:mr-60"
 //       >
 //         <div className="text-left ml-5 lg:ml-28 space-y-5 flex-1">
@@ -133,8 +133,6 @@
 
 
 
-
-
 import { Link } from "react-scroll";
 import heroImage from "../assets/1.png";
 import {
@@ -150,9 +148,9 @@ function Hero() {
   return (
     <div
       id="home"
-      className="min-h-screen w-full bg-zinc-900 text-white flex flex-col lg:flex-row px-4 sm:px-6 lg:px-10"
+      className="min-h-screen-2xl w-full bg-zinc-900 text-white flex flex-col lg:flex-row px-4 sm:px-6 lg:px-10"
     >
-      <div className="max-w-screen-2xl mx-auto w-full flex flex-col-reverse lg:flex-row items-center justify-between gap-10 mt-10 lg:mt-20">
+      <div className="max-w-screen-2xl mx-auto w-full flex flex-col-reverse lg:flex-row items-center justify-between gap-10 mt-10 lg:mt-40 mb-17 lg:-mb-7">
         {/* Left Side Text Content */}
         <div className="text-left space-y-5 flex-1 px-4 sm:px-8 lg:px-16">
           <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-7xl font-bold leading-tight">
@@ -163,7 +161,10 @@ function Hero() {
             </span>
           </h1>
 
-          <h1 className="text-lg sm:text-xl md:text-2xl" style={{ fontFamily: "sans-serif" }}>
+          <h1
+            className="text-lg sm:text-xl md:text-2xl"
+            style={{ fontFamily: "sans-serif" }}
+          >
             <Typewriter
               words={["Computer Science & Engg. Student"]}
               loop={0}
@@ -176,15 +177,16 @@ function Hero() {
           </h1>
 
           <p className="text-base md:text-lg text-gray-400 max-w-2xl leading-relaxed font-light">
-            Enhancing digital experiences that are smooth, scalable, and made to impress.
+            Enhancing digital experiences that are smooth, scalable, and made to
+            impress.
           </p>
 
           {/* Tags */}
-          <div className="flex flex-wrap gap-3">
+          <div className="flex gap-1 sm:gap-3">
             {["React", "Node.js", "Express.js", "Next.js"].map((tech) => (
               <div
                 key={tech}
-                className="px-4 py-2 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 text-sm text-gray-300 hover:bg-white/10 transition-colors"
+                className="px-4 py-2 rounded-full bg-white/5 backdrop-blur-sm border border-white/10 text-sm text-gray-300 hover:bg-white/10 transition-all whitespace-nowrap"
               >
                 {tech}
               </div>
@@ -202,7 +204,12 @@ function Hero() {
                 className="relative w-40 h-11 bg-gradient-to-r from-[#6366f1] to-[#a855f7] backdrop-blur-xl rounded-lg border border-white/10 flex items-center justify-center gap-2 text-md text-gray-200 font-medium transition-all duration-300 hover:bg-white/5"
               >
                 {icon}
-                <Link to={to} smooth={true} duration={500} className="cursor-pointer">
+                <Link
+                  to={to}
+                  smooth={true}
+                  duration={500}
+                  className="cursor-pointer"
+                >
                   {label}
                 </Link>
               </div>
@@ -210,7 +217,7 @@ function Hero() {
           </div>
 
           {/* Social Links */}
-          <div className="flex gap-4 pt-4">
+          <div className="flex gap-4 pt-2">
             {[
               {
                 icon: <FaLinkedin />,

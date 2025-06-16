@@ -8,9 +8,9 @@ function About() {
   return (
     <section
       id="about"
-      className="min-h-screen px-6 py-2 text-white flex items-center justify-center"
+      className="min-h-screen px-6 py-2 pt-20 lg:mt-4 text-white flex items-center justify-center"
     >
-      <div className="max-w-6xl w-full text-left lg:text-center sm:text-left">
+      <div className="max-w-6xl  w-full text-left lg:text-center sm:text-left">
         <h2 className="text-4xl sm:text-5xl font-bold mb-8 text-center sm:text-center">About Me</h2>
         {/* Description */}
         <p className="text-lg sm:text-2xl leading-relaxed text-gray-300 max-w-4xl mx-auto text-left sm:text-left">

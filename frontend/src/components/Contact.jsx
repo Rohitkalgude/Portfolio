@@ -3,7 +3,7 @@ import { FaEnvelope, FaPhoneAlt, FaLinkedin, FaGithub } from "react-icons/fa";
 
 function Contact() {
   return (
-    <section id="contact" className="text-white px-6 py-20">
+    <section id="contact" className="text-white px-6 ">
       <div className="max-w-6xl mx-auto text-center mb-12">
         <p className="text-purple-400 mt-2 text-lg">Get in Touch</p>
         <h2 className="text-4xl font-bold">Contact Me</h2>

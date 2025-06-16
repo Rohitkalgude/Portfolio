@@ -14,7 +14,7 @@ function Main() {
   ];
 
   return (
-    <section id="main" className="text-white min-h-screen px-4 sm:px-6 py-20">
+    <section id="main" className="text-white min-h-screen px-4 sm:px-6 py-20 mt-7">
       <div className="w-full max-w-[87rem] mx-auto">
         {/* Header */}
         <div className="text-center mb-10">
