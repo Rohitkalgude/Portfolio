@@ -19,7 +19,7 @@ function Navbar() {
       <div className="flex justify-between items-center w-full max-w-screen-2xl mx-auto">
         {/* Title */}
         <div className="flex-shrink-0">
-          <h1 className="text-xl sm:text-2xl md:text-3xl font-bold bg-gradient-to-r from-[#a855f7] to-[#6366f1] bg-clip-text text-transparent drop-shadow-lg">
+          <h1 className="text-xl sm:text-2xl md:text-2xl font-bold bg-gradient-to-r from-[#a855f7] to-[#6366f1] bg-clip-text text-transparent drop-shadow-lg">
             Rohit Kalgude
           </h1>
         </div>

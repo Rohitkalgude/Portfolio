@@ -43,7 +43,7 @@ function Projects() {
       description: "Create and share custom memes using this React-based app.",
       link: "https://github.com/Rohitkalgude/Meme-Generator",
       technology: "React, Tailwind CSS",
-      live: "",
+      live: "https://meme-generator-three-liart.vercel.app/",
     },
   ];
 
@@ -66,7 +66,7 @@ function Projects() {
               <h3 className="text-lg sm:text-xl font-bold mb-2">{proj.title}</h3>
               <p className="text-gray-300 text-sm sm:text-base mb-4">{proj.description}</p>
               <div className="mb-4">
-                <span className="text-sm font-semibold text-purple-400 uppercase">
+                <span className="text-sm font-semibold text-white uppercase">
                   Tech Stack:
                 </span>
                 <p className="text-gray-400 text-sm mt-1">{proj.technology}</p>
